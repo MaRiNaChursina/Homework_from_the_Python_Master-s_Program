@@ -1,4 +1,4 @@
-﻿'''1. Класс Product
+'''1. Класс Product
 
 Атрибуты:
 -name (строка) — название товара;
@@ -77,14 +77,6 @@ class Order:
             product.update_stock(self.products[product])
             del self.products[product]
             return
-        
-
-
-    def list_productss(self):
-        for element in self.products:
-            print(element.name)
-
-
 
 class Store:
     def __init__(self):
@@ -99,10 +91,6 @@ class Store:
             
     def create_order(self):
         return Order()
-
-
-
-
 
 if __name__ == "__main__":
     # Создаем магазин
